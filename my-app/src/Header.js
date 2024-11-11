@@ -8,8 +8,8 @@ function Header() {
       <nav>
         <ul>
           <li><button className="btn-secondary"><a href="#features">Сведения</a></button></li>
-          <li><button className="btn-secondary"><a href="#contact">Контакты</a></button></li>
-          <li><button className="btn-primary">Начать</button></li>
+          <li><button className="btn-secondary"><a href="#contact">Галерея</a></button></li>
+          {/* <li><button className="btn-primary">Начать</button></li> */}
         </ul>
       </nav>
     </header>

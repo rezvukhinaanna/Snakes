@@ -10,7 +10,7 @@ function FeaturesSection() {
 
   return (
     <section className="features" id="features">
-      <h2>Почему стоит выбрать нас?</h2>
+      {/* <h2>Почему стоит выбрать нас?</h2> */}
       <div className="features-grid">
         {features.map((feature, index) => (
           <div className="feature-card" key={index}>

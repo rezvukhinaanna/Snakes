@@ -1,16 +1,31 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import HeroSection from './HeroSection';
+import MainSection from './MainSection';
 import FeaturesSection from './FeaturesSection';
+import ImageUpload from './ImageUpload';
+import UploadPhoto from './UploadPhoto';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <HeroSection />
-      <FeaturesSection />
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Header />
+              <MainSection />
+              <FeaturesSection />
+            </>
+          } />
+
+          <Route path="/imageupload" element={<ImageUpload />} />
+     
+          <Route path="/uploadphoto" element={<UploadPhoto />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

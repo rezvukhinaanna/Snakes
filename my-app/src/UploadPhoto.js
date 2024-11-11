@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './ImageUpload.css';
+import './UploadPhoto.css';
 
-const ImageUpload = () => {
+const UploadPhoto = () => {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileChange = (event) => {
@@ -10,21 +10,21 @@ const ImageUpload = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Тут будет логика для обработки изображения
+    // обработка изображения
     alert('Фото загружено!');
   };
 
   return (
     <div className="upload-page">
         <div className="upload-container">
-        <h1>Загрузите фото змеи</h1>
+        <h1>Загрузите своё фото</h1>
         <form onSubmit={handleSubmit}>
             <input type="file" onChange={handleFileChange} />
-            <button type="submit">Распознать</button>
+            <button type="submit">Загрузить</button>
         </form>
         </div>
     </div>
   );
 };
 
-export default ImageUpload;
+export default UploadPhoto;

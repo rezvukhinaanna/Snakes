@@ -3,8 +3,8 @@
     color: #fff;
     padding: 60px 20px;
     text-align: center;
-    border-radius: 0px 0px 20px 20px;
-    margin: 0px 5px;
+    border-radius: 0px 0px 50px 50px;
+    margin: 0px 15px;
   }
   
   .hero h1 {
@@ -28,7 +28,7 @@
   .btn-primary {
     padding: 12px 24px;
     border-radius: 20px;
-    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    background: linear-gradient(90deg, #3f986a, #2a6647);
     color: #fff;
     border: none;
     font-size: 16px;
