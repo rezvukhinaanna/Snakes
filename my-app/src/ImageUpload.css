@@ -2,10 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-height: 86vh;
     background-color: white;
     margin: 0;
     background-image: url('../1.jpg');
+    background-repeat: no-repeat;
+    background-position: left 15px top;
+    max-width: 1631px;
   }
   
   .upload-container {
@@ -110,6 +113,10 @@
   #result span {
     font-weight: bold;
     color: #3f986a;
+  }
+
+  .upload-staus {
+    color: white;
   }
   
   @media (max-width: 768px) {

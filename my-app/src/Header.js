@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -7,9 +8,11 @@ function Header() {
       <div className="logo">Распознаватель змей</div>
       <nav>
         <ul>
-          <li><button className="btn-secondary"><a href="#features">Сведения</a></button></li>
-          <li><button className="btn-secondary"><a href="#contact">Галерея</a></button></li>
-          {/* <li><button className="btn-primary">Начать</button></li> */}
+          <li>
+            <button className="btn-secondary">
+              <Link to="/snake-gallery">Галерея</Link>
+            </button>
+          </li>
         </ul>
       </nav>
     </header>

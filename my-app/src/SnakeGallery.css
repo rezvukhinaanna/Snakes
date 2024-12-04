@@ -1,0 +1,44 @@
+.snake-gallery-container {
+    margin: 20px;
+  }
+  
+  .snake-category {
+    margin-bottom: 40px;
+  }
+  
+  .category-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .snake-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .snake-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .snake-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 150px;
+  }
+  
+  .snake-name {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

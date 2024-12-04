@@ -110,6 +110,10 @@
     font-weight: bold;
     color: #3f986a;
   }
+
+  .upload-status {
+    color: white;
+  }
   
   @media (max-width: 768px) {
     .upload-container {
