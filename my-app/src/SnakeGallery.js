@@ -4,9 +4,9 @@ import './SnakeGallery.css';
 // Компонент для отображения отдельной карточки змеи
 const SnakeCard = ({ name, image }) => {
   return (
-    <div className="snake-card">
-      <img src={image} alt={name} className="snake-image" />
-      <p className="snake-name">{name}</p>
+    <div className="snake-card-custom">
+      <img src={image} alt={name} className="snake-image-custom" />
+      <p className="snake-name-custom">{name}</p>
     </div>
   );
 };
@@ -15,43 +15,43 @@ const SnakeCard = ({ name, image }) => {
 const SnakeGallery = () => {
   const snakeCategories = [
     {
-      category: 'Кобры',
+      category: 'Ужи',
       snakes: [
-        { name: 'Кобра индийская', image: '/image/kobra_indijska.jpg' },
-        { name: 'Кобра черная', image: '/image/kobra_chernaya.jpg' },
-        { name: 'Королевская кобра', image: '/image/korolevskaya_kobra.jpg' },
-        { name: 'Кобра Египетская', image: '/image/kobra_egipt.jpg' },
-        { name: 'Сиамская кобра', image: '/image/siamskaya_kobra.jpg' }
+        { name: 'Обыкновенный уж', image: '/image/obyknovenny_uzh.jpg' },
+        { name: 'Европейский уж', image: '/image/evropeyskiy_uzh.jpg' },
+        { name: 'Уж черный', image: '/image/uzh_chernyj.jpg' },
+        { name: 'Гартеровая змея', image: '/image/garter_snake.jpg' },
+        { name: 'Уж полосатый', image: '/image/uzh_polosatyj.jpg' }
       ]
     },
     {
-      category: 'Питоны',
+      category: 'Медянки',
       snakes: [
-        { name: 'Питон ретикулatus', image: '/image/piton_reticulatus.jpg' },
-        { name: 'Питон королевский', image: '/image/piton_korolevsky.jpg' },
-        { name: 'Питон сетчатый', image: '/image/piton_setchatyj.jpg' },
-        { name: 'Питон Борнео', image: '/image/piton_borneo.jpg' },
-        { name: 'Питон Тиморский', image: '/image/piton_timorskij.jpg' }
+        { name: 'Медянка обыкновенная', image: '/image/medyanka_obyknovennaya.jpg' },
+        { name: 'Медянка черная', image: '/image/medyanka_chernaya.jpg' },
+        { name: 'Медянка борнео', image: '/image/medyanka_borneo.jpg' },
+        { name: 'Медянка тайская', image: '/image/medyanka_tajskaya.jpg' },
+        { name: 'Медянка серая', image: '/image/medyanka_seraya.jpg' }
       ]
     },
     {
       category: 'Гадюки',
       snakes: [
-        { name: 'Гадюка обыкновенная', image: '/images/gadyuka_obyknovennaya.jpg' },
-        { name: 'Гадюка Кавказская', image: '/images/gadyuka_kavkazskaya.jpg' },
-        { name: 'Гадюка степная', image: '/images/gadyuka_stepnaya.jpg' },
-        { name: 'Гадюка Камчатская', image: '/images/gadyuka_kamchatskaya.jpg' },
-        { name: 'Гадюка черная', image: '/images/gadyuka_chernaya.jpg' }
+        { name: 'Гадюка обыкновенная', image: '/image/gadyuka_obyknovennaya.jpg' },
+        { name: 'Гадюка Кавказская', image: '/image/gadyuka_kavkazskaya.jpg' },
+        { name: 'Гадюка степная', image: '/image/gadyuka_stepnaya.jpg' },
+        { name: 'Гадюка Камчатская', image: '/image/gadyuka_kamchatskaya.jpg' },
+        { name: 'Гадюка черная', image: '/image/gadyuka_chernaya.jpg' }
       ]
     }
   ];
 
   return (
-    <div className="snake-gallery-container">
+    <div className="snake-gallery-container-custom">
       {snakeCategories.map((category, index) => (
-        <div key={index} className="snake-category">
-          <h2 className="category-title">{category.category}</h2>
-          <div className="snake-gallery">
+        <div key={index} className="snake-category-custom">
+          <h2 className="category-title-custom">{category.category}</h2>
+          <div className="snake-gallery-custom">
             {category.snakes.map((snake, index) => (
               <SnakeCard key={index} name={snake.name} image={snake.image} />
             ))}

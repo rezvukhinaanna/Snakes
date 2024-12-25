@@ -12,7 +12,7 @@ function MainSection() {
             Распознать по фото
           </button>
           <button className="btn-primary" onClick={() => window.location.href = '/uploadphoto'}>
-            Загрузить своё фото
+            Добавить свое фото в датасет
           </button>
         </div>
       </div>

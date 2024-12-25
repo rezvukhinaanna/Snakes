@@ -1,0 +1,89 @@
+[
+  {
+    "title": "r",
+    "description": "rr",
+    "file": "9ae4628821892eb4ebb88a4e85397207",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/9ae4628821892eb4ebb88a4e85397207"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "e72bc9ced0ea61867789c0114b348dc6",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/e72bc9ced0ea61867789c0114b348dc6"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "babbd5a19a4dbac303637a5286eb58fc",
+    "prediction": "Ошибка обработки изображения: cannot identify image file 'D:\\\\3 курс_1 семестр\\\\курсовая_змеи\\\\snake-server\\\\uploads\\\\babbd5a19a4dbac303637a5286eb58fc'",
+    "userImage": "/uploads/babbd5a19a4dbac303637a5286eb58fc"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "f661498e9f568644c32c5d4d2b83dd66",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/f661498e9f568644c32c5d4d2b83dd66"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "3833f4136f70e6d6dddbe99ba837c2c1",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/3833f4136f70e6d6dddbe99ba837c2c1"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "7e39919badc1e687716279e3807207c4",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/7e39919badc1e687716279e3807207c4"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "0969194116735eb8cb5bfc3d67664022",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/0969194116735eb8cb5bfc3d67664022"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "8a3994e8ae1b26329085e56ea6b66483",
+    "prediction": "Уж",
+    "confidence": "85.61%",
+    "userImage": "/uploads/8a3994e8ae1b26329085e56ea6b66483"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "a631b51f963772f50fd6220484b1c70d",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/a631b51f963772f50fd6220484b1c70d"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "cd81c0c5204eff1a0995a0602a9a806c",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/cd81c0c5204eff1a0995a0602a9a806c"
+  },
+  {
+    "title": "Без названия",
+    "description": "Описание не указано",
+    "file": "9da4f36894b89a713536c88e6a219ff0",
+    "prediction": "Гадюка",
+    "confidence": "87.53%",
+    "userImage": "/uploads/9da4f36894b89a713536c88e6a219ff0"
+  }
+]

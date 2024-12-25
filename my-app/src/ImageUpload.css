@@ -1,137 +1,237 @@
+/* Полная высота страницы */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+/* Стиль для страницы загрузки с фоном */
 .upload-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 86vh;
-    background-color: white;
-    margin: 0;
-    background-image: url('../1.jpg');
-    background-repeat: no-repeat;
-    background-position: left 15px top;
-    max-width: 1631px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.upload-container {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(44, 44, 44); /* Прозрачный фон */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(143, 143, 143, 0.3);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.upload-container h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.upload-container form {
+  margin-bottom: 20px;
+}
+
+.upload-container input[type="file"] {
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
+  transition: border-color 0.3s;
+}
+
+.upload-container input[type="file"]:focus {
+  border-color: #3f986a;
+  outline: none;
+}
+
+.upload-container button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #3f986a;
+  border: 2px solid black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 80%;
+  max-width: 400px;
+}
+.error-message {
+  color: white;
+}
+
+.upload-container button:hover {
+  background-color: #3f986a;
+  border: 1px solid white;
+  transform: scale(1.05);
+}
+
+.upload-container button:active {
+  transform: scale(1);
+}
+
+/* Стиль для страницы с результатами */
+.upload-page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Стиль для страницы с результатами */
+.result-page {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(62, 62, 62, 0.8); /* Прозрачный фон */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  min-width: 600px; /* Сделаем карточку шире */
+  margin: 40px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result-page h2 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: -10px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #fff;
+}
+
+.result-page p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: -30px;
+}
+
+.result-page .prediction,
+.result-page .confidence {
+  font-size: 2.9rem;
+  color: #37825b;
+  text-shadow: 0.5px 0.5px 0.5px #cfcfcfc7;
+  font-weight: bold;
+  margin-bottom: -30px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 47px;
+}
+
+.image-card {
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px; /* Увеличиваем ширину карточки */
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #3f986a;
+}
+
+.image-card .card-info {
+  padding: 10px;
+  color: #fff;
+}
+
+.image-card .card-info h3 {
+  font-size: 1.5rem; /* Увеличиваем размер заголовка */
+  color: #fff;
+}
+
+.image-card .card-info p {
+  font-size: 1.1rem;
+  color: #3f986a;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
   .upload-container {
-    text-align: center;
-    padding: 30px;
-    /* background: linear-gradient(135deg, #4db881, #2a6647); */
-    background-color: #393838;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .upload-container h1 {
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 30px;
-    font-weight: bold;
-  }
-  
-  .upload-container form {
-    margin-bottom: 20px;
-  }
-  
-  .upload-container input[type="file"] {
-    padding: 12px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    background-color: #fff;
-    margin-bottom: 20px;
-    width: 80%;
-    max-width: 400px;
-    transition: border-color 0.3s;
-  }
-  
-  .upload-container input[type="file"]:focus {
-    border-color: #3f986a;
-    outline: none;
-  }
-  
-  .upload-container button {
-    padding: 12px 24px;
-    border-radius: 30px;
-    background-color: #3f986a;
-    border: 2px solid black;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s, transform 0.2s;
-    width: 80%;
-    max-width: 400px;
-  }
-  
-  .upload-container button:hover {
-    background-color: #3f986a;
-    border: 1px solid white;
-    transform: scale(1.05);
-  }
-  
-  .upload-container button:active {
-    transform: scale(1);
-  }
-  
-  #loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #3f986a;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  #result {
-    margin-top: 30px;
-    background-color: #fff;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  #result h2 {
-    font-size: 1.6rem;
-    color: #333;
-  }
-  
-  #result span {
-    font-weight: bold;
-    color: #3f986a;
+    width: 90%;
   }
 
-  .upload-staus {
-    color: white;
+  .upload-container h1 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 768px) {
-    .upload-container {
-      padding: 20px;
-      width: 90%;
-    }
-  
-    .upload-container h1 {
-      font-size: 2rem;
-    }
-  
-    .upload-container input[type="file"],
-    .upload-container button {
-      width: 100%;
-    }
+
+  .upload-container input[type="file"],
+  .upload-container button {
+    width: 100%;
   }
-  
+}
+
+/* Стиль для страницы загрузки с фоном */
+.loading {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Добавляем расстояние между текстом и спиннером */
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3f986a;
+  border-radius: 50%;
+  width: 30px; /* Уменьшаем размер */
+  height: 30px; /* Уменьшаем размер */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

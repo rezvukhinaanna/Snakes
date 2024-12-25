@@ -1,44 +1,76 @@
-.snake-gallery-container {
-    margin: 20px;
+.snake-gallery-container-custom {
+  margin: 20px;
+  padding: 0 10px;
+}
+
+.snake-category-custom {
+  margin-bottom: 40px;
+}
+
+.category-title-custom {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.snake-gallery-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.snake-card-custom {
+  width: calc(15% - 20px);
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.snake-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.snake-image-custom {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 200px;
+  transition: transform 0.3s;
+}
+
+.snake-card-custom:hover .snake-image-custom {
+  transform: scale(1.05);
+}
+
+.snake-name-custom {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .snake-card-custom {
+    width: calc(50% - 20px);
   }
-  
-  .snake-category {
-    margin-bottom: 40px;
-  }
-  
-  .category-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .snake-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .snake-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    width: 180px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .snake-image {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-    height: 150px;
-  }
-  
-  .snake-name {
+
+  .snake-name-custom {
     font-size: 14px;
-    margin-top: 10px;
-    font-weight: bold;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .snake-card-custom {
+    width: 100%;
+  }
+}
